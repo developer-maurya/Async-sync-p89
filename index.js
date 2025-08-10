@@ -28,10 +28,10 @@ function fetchData() {
 async function getData() {
   try {
     console.log("Fetching data...");
-    const result = await fetchData();
-    console.log(result); 
+    const result = await fetchData(); // Waits for the Promise to resolve
+    console.log(result); // Logs: "Data fetched successfully!"
   } catch (error) {
-    console.error("Error:", error);
+    console.error("Error:", error); // Handles any errors
   }
 }
 
@@ -39,3 +39,4 @@ getData();
 
 
   
+
